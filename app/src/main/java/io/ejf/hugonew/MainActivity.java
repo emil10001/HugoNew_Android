@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart(){
         super.onStart();
 
-        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ", Locale.US);
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZZZZZ", Locale.US);
         String strDate = date.format(new Date()).toString();
         StringBuilder sb = new StringBuilder("+++\n");
         sb.append("date = \"" + strDate + "\"\n");
